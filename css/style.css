@@ -1,0 +1,203 @@
+*{margin: 0;padding: 0;box-sizing: border-box;font-family: Arial;}
+html{
+	font-size: 100%;
+}
+.col-9 {
+    flex: 0 0 auto;
+    width: 90% !important;
+}
+#header{
+	background-color: #fff;
+	width: 100%;
+	position: sticky;
+	top: 0;
+}
+#header h2{
+	padding-left: 15px;
+	color: navy;
+}
+#header #right_side li a{
+	color: black;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-weight: bold;
+	transition: transform 1.5s;
+}
+#header #right_side li a:hover{
+	color: navy;
+	transform: scale(1.1);
+}
+/*Header section end*/
+
+/*Begin about section*/
+#about_section{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-image: linear-gradient(#5BA4EF,#9867CE);
+}
+#about_section img{
+	height: 350px;
+	width: 350px;
+	border:1px solid grey;
+	padding: 5px;
+	background-color:  #fefefe;
+	opacity: 0.8;
+	border-radius: 50%;
+	box-shadow: 2px 2px 3px blue;
+	transition: transform 1s;
+}
+#about_section img:hover{
+	transform: scale(0.9);
+	cursor: zoom-in;
+}
+#about_section #right_side{
+	align-self: center;
+	background-color: #fff;
+	border:1px solid grey;
+	box-shadow: 2px 2px 3px blue;
+}
+#about_section #right_side h1{
+	align-items: center;
+}
+
+/*Skill Section*/
+#skill_section{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #eee;
+}
+#skill_section h2{
+	font-weight: bold;
+}
+#skill_section .progress{
+	margin-bottom: 16px;
+	height: 1.5rem;
+	font-size: 1rem;
+}
+#skill_section .html{
+	width: 90%;
+	background-image: linear-gradient(black,red);
+	font-family: all;
+	font-weight: bold;
+}
+#skill_section .css{
+	width: 85%;
+	background-image: linear-gradient(hotpink,orange);
+	font-family: all;
+	font-weight: bold;
+}
+#skill_section .bootstrap{
+	width: 80%;
+	background-image: linear-gradient(orange,black);
+	font-family: all;
+	font-weight: bold;
+}
+#skill_section .wordpress{
+	width: 70%;
+	background-image: linear-gradient(navy,black);
+	font-family: all;
+	font-weight: bold;
+}
+#skill_section .codeigniter{
+	width: 60%;
+	background-image: linear-gradient(tan,red);
+	font-family: all;
+	font-weight: bold;
+}
+#skill_section .js{
+	width: 50%;
+	background-image: linear-gradient(grey,green);
+	font-family: all;
+	font-weight: bold;
+}
+
+/*Work history*/
+#work_history{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #eee;
+}
+#work_history h2{
+	font-weight: bold;
+}
+.carousel-inner{
+	border-radius: 10px;
+	background-color: black;
+	box-shadow: 2px 2px 3px black;
+}
+.carousel-item img{
+	border-radius: 10px;
+	opacity: 0.5;
+}
+
+/*begin contact*/
+#contact_section{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #eee;
+}
+#contact_section h2{
+	font-weight: bold;
+}
+/*Footer begin*/
+.contact{
+	background-color: black;
+	color: #999999;
+}
+#social_icons li a i{
+	color:#999999; 
+}
+/*Media Queries*/
+@media (max-width: 768px){
+	html{font-size: 85%;}
+	#about_section{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	#about_section img{
+		display: flex;
+		margin: auto;
+		height: 250px;
+		width: 250px;
+	}
+	#about_section #right_side{
+		margin-top: 10px;
+	}
+	#about_section{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	}
+	#skill_section{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	}
+}
+@media (min-width: 769px) and (max-width: 992px){
+	html{font-size: 95%;}
+	#about_section{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	#about_section img{
+		display: flex;
+		margin: auto;
+		height: 300px;
+		width: 300px;
+	}
+	#about_section #right_side{
+		margin-top: 10px;
+	}
+	#skill_section{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	}
+}
+@media (max-width: 430px){
+	html{font-size: 70%}
+}
+@media (max-width: 370px){
+	html{font-size: 60%}
+}
+@media (max-width: 333px){
+	html{font-size: 45%}
+}
